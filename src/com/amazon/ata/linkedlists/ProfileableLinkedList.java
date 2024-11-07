@@ -18,22 +18,23 @@ public class ProfileableLinkedList implements ProfileableList {
 
     @Override
     public void addFirst(Double data) {
-        throw new UnsupportedOperationException();
+        list.addFirst(data);
     }
 
     @Override
     public void addLast(Double data) {
-        throw new UnsupportedOperationException();
+        list.addLast(data);
     }
 
     @Override
     public Double getFirst() {
-        throw new UnsupportedOperationException();
+        return list.getFirst();
     }
 
     @Override
     public Double getMiddle() {
-        throw new UnsupportedOperationException();
+        int length = list.size();
+        return list.get(length/2);
     }
 
     @Override
